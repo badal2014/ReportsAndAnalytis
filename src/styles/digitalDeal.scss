@@ -43,6 +43,24 @@
     }
 }
 .progress-bar-head{
+    ul{
+        display: inherit;
+        font-size: 10px;
+        line-height: 1.8;
+        letter-spacing: 1.9px;
+        text-align: left;
+    }
+    .progressBar{
+        float: left;
+        svg{
+            height: 82px;
+        }
+        span.ant-progress-text{
+            width: initial !important;
+            font-size: 14px;
+            top: 40px;
+        }
+    }
     h2{
         line-height: 1;
         margin: 0;

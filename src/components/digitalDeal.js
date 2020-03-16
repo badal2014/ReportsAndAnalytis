@@ -1,6 +1,6 @@
 import React from 'react';
-import { DatePicker, Button, Switch, Select, Tabs, Table } from 'antd';
-import { DownOutlined, PlusOutlined, BellOutlined } from "@ant-design/icons";
+import { DatePicker, Button, Switch, Select, Tabs, Table, Progress } from 'antd';
+import { DownOutlined, PlusOutlined, BellOutlined, StopOutlined, CheckOutlined, CloseOutlined } from "@ant-design/icons";
 import Search from 'antd/lib/input/Search';
 import profilePic from '../assets/profile.jpeg'
 const { TabPane } = Tabs;
@@ -134,11 +134,46 @@ export default class DigitalDeal extends React.Component {
                                 <p className="dateSelect">07/31/2019</p>
                                 <Switch style={{ backgroundColor: '#3fa4d2', fontWeight: 600 }} checkedChildren="Hide Details" unCheckedChildren="Unhide Details" defaultChecked />
                             </div>
-                            <div className="col-md-2 pad-0"></div>
-                            <div className="col-md-2 pad-0"></div>
-                            <div className="col-md-2 pad-0"></div>
-                            <div className="col-md-2 pad-0"></div>
-                            <div className="col-md-2 pad-0"></div>
+                            <div className="col-md-2 pad-0">
+                                <Progress className="progressBar" type="circle" percent={55} format={percent => `${percent} Leads`} />
+                                <ul className="list-inline">
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                </ul>
+                            </div>
+                            <div className="col-md-2 pad-0">
+                            <Progress className="progressBar" type="circle" percent={55} format={percent => `${percent} Leads`} />
+                                <ul className="list-inline">
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                </ul>
+                            </div>
+                            <div className="col-md-2 pad-0">
+                            <Progress className="progressBar" type="circle" percent={55} format={percent => `${percent} Leads`} />
+                                <ul className="list-inline">
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                </ul>
+                            </div>
+                            <div className="col-md-2 pad-0">
+                            <Progress className="progressBar" type="circle" percent={55} format={percent => `${percent} Leads`} />
+                                <ul className="list-inline">
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                </ul>
+                            </div>
+                            <div className="col-md-2 pad-0">
+                            <Progress className="progressBar" type="circle" percent={55} format={percent => `${percent} Leads`} />
+                                <ul className="list-inline">
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                    <li>WEB LEADS(22)</li>
+                                </ul>
+                            </div>
                         </div>
                         <div className="m-top-20">
                             <div className="row rowMargin textInitial m-top-20">
@@ -458,9 +493,9 @@ export default class DigitalDeal extends React.Component {
                                                     <div className="col-md-2 pad-0"><Button style={{ background: '#eaf5fd', color: '#4a4a4a' }}>FILTER</Button></div>
                                                     <div className="col-md-6">
                                                         <ul className="list-inline m0">
-                                                            <li>PENDING</li>
-                                                            <li>REQUIREMENTS HAVE BEEN MET</li>
-                                                            <li>ACTION REQUIRED</li>
+                                                            <li><CheckOutlined style={{ color: 'yellow', fontWeight: 'bold', fontSize: '14px', marginRight: '5px' }} />PENDING</li>
+                                                            <li><CheckOutlined style={{ color: 'green', fontWeight: 'bold', fontSize: '14px', marginRight: '5px' }} />REQUIREMENTS HAVE BEEN MET</li>
+                                                            <li><CloseOutlined style={{ color: 'green', fontWeight: 'bold', fontSize: '14px', marginRight: '5px' }} />ACTION REQUIRED</li>
                                                             <li>NO DATA</li>
                                                         </ul>
                                                     </div>
